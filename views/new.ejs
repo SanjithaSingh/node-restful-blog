@@ -1,0 +1,23 @@
+<%include ./partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header">
+        New blog
+        <form action="/blogs" class="ui form" method="POST">
+
+            <div class="field"> <label>Title</label>
+                <input type="text" name="blog[title]" placeholder="enter your title">
+            </div>
+            <div class="field"> <label>Image</label>
+                <input type="text" name="blog[image]" placeholder="enter the url for your image">
+            </div>
+            <div class="field"> <label>Body</label>
+                <textarea name="blog[body]" placeholder="what's on your mind?" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" class="ui inverted primary button" value="Submit">
+            <a href="/blogs" class="ui inverted red button">Go Back</a>
+
+        </form>
+    </div>
+</div>
+<%include ./partials/footer %>
